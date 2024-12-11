@@ -1,0 +1,84 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+  border-bottom: 2px solid #007BFF;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.ranking-table th {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px;
+  border: none;
+}
+
+.ranking-table td {
+  padding: 12px;
+  border: none;
+  font-size: 1rem;
+  color: #555;
+}
+
+.ranking-table tr:nth-child(even) {
+  background-color: #f1f3f5;
+}
+
+.ranking-table tr:hover {
+  background-color: #e9ecef;
+}
+
+.ranking-table tr td:first-child {
+  font-weight: bold;
+  text-align: center;
+}
+
+.ranking-table tr td:last-child {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #868e96;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .ranking-table td, .ranking-table th {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+}
